@@ -1,4 +1,18 @@
 <?php
+
+print ("HTTP_CLIENT_IP [".$_SERVER["HTTP_CLIENT_IP"]."]<br>");
+print ("REMOTE_ADDR".$_SERVER['REMOTE_ADDR']."]<br>");
+print ("HTTP_X_FORWARDED_FOR".$_SERVER['HTTP_X_FORWARDED_FOR']."]<br>");
+print ("HTTP_X_FORWARDED".$_SERVER['HTTP_X_FORWARDED']."]<br>");
+print ("HTTP_FORWARDED_FOR".$_SERVER['HTTP_FORWARDED_FOR']."]<br>");
+print ("HTTP_FORWARDED".$_SERVER['HTTP_FORWARDED']."]<br>");
+print ("HTTP_X_CLUSTER_CLIENT_IP".$_SERVER['HTTP_X_CLUSTER_CLIENT_IP']."]<br><br>");
+
+phpinfo();
+
+exit;
+
+
 /**
  * The Front Controller for handling every request
  *
